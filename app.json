@@ -1,0 +1,71 @@
+{
+  "expo": {
+    "name": "CacaoVision",
+    "slug": "cacaovision",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "cacaovision",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": false,
+    "icon": "./assets/images/icon.png",
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#5D4037"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.cacaovision.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "CacaoVision needs camera access to capture photos for disease detection",
+        "NSPhotoLibraryUsageDescription": "CacaoVision needs photo library access to select images for disease detection"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#5D4037"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.cacaovision.app",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "onnxruntime-react-native",
+      "./withOnnxruntimeFix",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "CacaoVision necesita acceso a la cámara para detectar enfermedades"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "CacaoVision necesita acceso a tus fotos para analizar imágenes"
+        }
+      ],
+      "expo-document-picker",
+      "expo-font",
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "CacaoVision necesita acceso para guardar imágenes con detecciones",
+          "savePhotosPermission": "CacaoVision necesita permiso para guardar imágenes en tu galería"
+        }
+      ]
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "2b4e213a-fd79-4c8b-bca6-8572ea756785"
+      }
+    }
+  }
+}
