@@ -169,6 +169,14 @@ El ultimo modelo cargado se guarda en AsyncStorage y se recarga automaticamente 
 
 ---
 
+## Descargar APK
+
+Puedes descargar la ultima version de la app directamente:
+
+[![Descargar APK](https://img.shields.io/badge/Descargar-APK-brightgreen?style=for-the-badge&logo=android)](https://drive.google.com/file/d/1m9rTWpggMNlEMZ0-RlhVJ686sGpooGNX/view?usp=sharing)
+
+---
+
 ## Guia de ejecucion local
 
 ### Prerrequisitos
